@@ -98,30 +98,31 @@ p { margin-bottom: 13px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
-/* Academic portrait in a dedicated right column of the About section. */
+/* Award portrait: one-third of the About content, aligned at the top. */
 .about-layout {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-  column-gap: 32px;
-  align-items: stretch;
+  gap: 32px;
+  align-items: start;
 }
-.about-copy { min-width: 0; }
-.about-copy .intro-lead { margin-top: 0; }
+.about-copy {
+  min-width: 0;
+}
+.about-copy .intro-lead {
+  margin-top: 0;
+}
 .intro-photo {
   margin: 0;
   min-width: 0;
-  display: flex;
-  flex-direction: column;
-  align-self: stretch;
+  align-self: start;
 }
 .intro-photo img {
   display: block;
   width: 100%;
-  flex: 1 1 auto;
-  min-height: 0;
-  max-height: 610px;
+  height: auto;
+  max-height: 500px;
   object-fit: cover;
-  object-position: center 57%;
+  object-position: center 56%;
   border: 1px solid var(--line);
   border-radius: 5px;
 }
@@ -133,7 +134,15 @@ p { margin-bottom: 13px; }
   text-align: center;
 }
 @media (max-width: 700px) {
-  .about-layout { grid-template-columns: 1fr; row-gap: 24px; }
-  .intro-photo { width: min(100%, 320px); }
-  .intro-photo img { height: auto; max-height: none; object-fit: contain; }
+  .about-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+  .intro-photo {
+    width: min(100%, 320px);
+  }
+  .intro-photo img {
+    max-height: none;
+    object-fit: contain;
+  }
 }
