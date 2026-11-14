@@ -1,21 +1,21 @@
-# Pavankumar Chandankar — Research & Engineering Portfolio
+# Pavankumar Chandankar — Academic Research Portfolio
 
-Live website: **https://pavankumar-chandankar.github.io/**
+Live website: https://pavankumar-chandankar.github.io/
 
-A lightweight, dependency-free GitHub Pages site about research and engineering in machine learning, wearable and Wi-Fi sensing, adversarial robustness, embedded systems, and human-centered AI.
+This is the current minimal, text-first website intended for research and PhD applications.
 
-## Site contents
+## Previous design
 
-- Research interests, including adaptive sampling, robustness via weight-space learning, reliable sensor ML, and Wi-Fi CSI
-- Both first-author publications (iWOAR 2026 and ACM UbiComp/ISWC HASCA 2025)
-- Original conference photographs and the iWOAR 2026 Best Paper Award
-- Selected research and engineering repositories, including CrossGuard-Fi, ContinuousConvLSTM, PatchTST, Focus Buddy, CAN Sentinel, and RGB-D reconstruction
-- Industry and research experience, education, skills, and contact details
+The former research portfolio (including the conference gallery, photography, CSS, and assets) is preserved in the branch [`legacy-portfolio-2026-11-14`](https://github.com/pavankumar-chandankar/pavankumar-chandankar.github.io/tree/legacy-portfolio-2026-11-14).
 
-## Editing and deployment
+## Structure
 
-Edit `index.html`, `styles.css`, and `script.js` on the **main** branch. GitHub Pages serves the site at the same URL; no project rename is required.
+- `index.html` — academic profile, publications, research projects, experience, education, and contact.
+- `styles.css` — responsive, print-friendly styling with no external UI framework.
+- `assets/Pavankumar_Chandankar_CV.pdf` — PDF linked from the profile.
 
-The current CV link in the hero uses `assets/Pavankumar_Chandankar_CV.pdf`. **When changing the PDF, replace that asset with the latest public-safe CV**. The HTML refresh does not replace the existing binary PDF. Avoid disclosing confidential project details from previous employers.
+## Updating
 
-Content is based on the current résumé and linked public repositories. In-development or synthetic-only prototypes are described as such; publication claims should link to the papers.
+Edit `index.html` and commit to `main`. GitHub Pages will continue using the original website URL. Publication links should be verified before changing status from under review to accepted or published. Keep research prototypes distinct from validated experimental results, and avoid sensitive details from industry projects.
+
+The website does not track visitors and does not use JavaScript, external fonts, or remote image assets.
