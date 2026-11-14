@@ -1,21 +1,21 @@
 # Pavankumar Chandankar — Academic Research Portfolio
 
-Live website: https://pavankumar-chandankar.github.io/
+Website: https://pavankumar-chandankar.github.io/
 
-This is the current minimal, text-first website intended for research and PhD applications.
+Minimal academic website for PhD applications. The content follows the research-oriented CV updated in November 2026, emphasizing adversarial robustness, trustworthy ML evaluation, and multimodal sensing.
 
-## Previous design
+The site includes:
+- Two first-author publications and the iWOAR 2026 Best Paper Award.
+- Master's thesis on weight-space learning for adversarial robustness, with evaluation results.
+- ContinuousConvLSTM, PatchTST, and Wi-Fi CSI research and repositories.
+- Focus Buddy, GEM-CAN/CAN evaluation, engineering experience, education, skills, and awards.
 
-The former research portfolio (including the conference gallery, photography, CSS, and assets) is preserved in the branch [`legacy-portfolio-2026-11-14`](https://github.com/pavankumar-chandankar/pavankumar-chandankar.github.io/tree/legacy-portfolio-2026-11-14).
+The Wi-Fi CSI/IMU paper submitted to the PerFail workshop (IEEE PerCom 2027) is **under review**, not an accepted publication.
 
-## Structure
+## CV
 
-- `index.html` — academic profile, publications, research projects, experience, education, and contact.
-- `styles.css` — responsive, print-friendly styling with no external UI framework.
-- `assets/Pavankumar_Chandankar_CV.pdf` — PDF linked from the profile.
+The public download link points to `assets/Pavankumar_Chandankar_CV.pdf`. Its Git blob matches the newly supplied PhD CV. The older general CV remains as `assets/Pavankumar_Chandankar_CV1.pdf`.
 
-## Updating
+## Site history
 
-Edit `index.html` and commit to `main`. GitHub Pages will continue using the original website URL. Publication links should be verified before changing status from under review to accepted or published. Keep research prototypes distinct from validated experimental results, and avoid sensitive details from industry projects.
-
-The website does not track visitors and does not use JavaScript, external fonts, or remote image assets.
+The original, photo-heavy website is archived in the [`legacy-portfolio-2026-11-14`](https://github.com/pavankumar-chandankar/pavankumar-chandankar.github.io/tree/legacy-portfolio-2026-11-14) branch. The current site uses plain HTML and CSS.
