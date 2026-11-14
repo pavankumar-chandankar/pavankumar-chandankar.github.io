@@ -97,3 +97,34 @@ p { margin-bottom: 13px; }
   a { color: #000; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* A single academic award portrait, alongside the introduction. */
+.introduction { display: flow-root; }
+.intro-photo {
+  float: right;
+  width: 225px;
+  max-width: 35%;
+  margin: 0 0 18px 30px;
+}
+.intro-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+}
+.intro-photo figcaption {
+  margin-top: 7px;
+  color: var(--secondary);
+  font-size: .79rem;
+  line-height: 1.45;
+  text-align: center;
+}
+@media (max-width: 620px) {
+  .intro-photo {
+    float: none;
+    max-width: 100%;
+    width: 225px;
+    margin: 0 0 22px;
+  }
+}
