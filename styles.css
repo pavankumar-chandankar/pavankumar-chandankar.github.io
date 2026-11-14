@@ -98,33 +98,42 @@ p { margin-bottom: 13px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
-/* A single academic award portrait, alongside the introduction. */
-.introduction { display: flow-root; }
+/* Academic portrait in a dedicated right column of the About section. */
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  column-gap: 32px;
+  align-items: stretch;
+}
+.about-copy { min-width: 0; }
+.about-copy .intro-lead { margin-top: 0; }
 .intro-photo {
-  float: right;
-  width: 225px;
-  max-width: 35%;
-  margin: 0 0 18px 30px;
+  margin: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
 }
 .intro-photo img {
   display: block;
   width: 100%;
-  height: auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: 610px;
+  object-fit: cover;
+  object-position: center 57%;
   border: 1px solid var(--line);
   border-radius: 5px;
 }
 .intro-photo figcaption {
-  margin-top: 7px;
+  margin-top: 8px;
   color: var(--secondary);
   font-size: .79rem;
   line-height: 1.45;
   text-align: center;
 }
-@media (max-width: 620px) {
-  .intro-photo {
-    float: none;
-    max-width: 100%;
-    width: 225px;
-    margin: 0 0 22px;
-  }
+@media (max-width: 700px) {
+  .about-layout { grid-template-columns: 1fr; row-gap: 24px; }
+  .intro-photo { width: min(100%, 320px); }
+  .intro-photo img { height: auto; max-height: none; object-fit: contain; }
 }
